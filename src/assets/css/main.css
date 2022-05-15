@@ -1,0 +1,49 @@
+.no-outline {
+  border: none;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+.list-group {
+  border-radius: 20px;
+}
+.list-group-item {
+  background: #f4f7f8;
+  border: none;
+}
+.badge-dots {
+  background: #f4f7f8;
+  color: black;
+}
+
+.badge-dots:hover {
+  background: #2060ff;
+  color: #f4f7f8;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#dropdown-1__BV_toggle_ {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+#dropdown-1__BV_toggle_:hover {
+  background: #e7eeff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+@media (min-width: 767px) {
+  .close {
+    display: none;
+  }
+  /* CSS */
+}
