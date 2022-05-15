@@ -3,13 +3,13 @@
     <b-list-group-item> 
       <b>Beranda</b> 
         <b-row class="mt-2">
-            <b-col cols="1">
+            <b-col cols="2" md="1">
             <vs-avatar>
                 <img fluid src="https://cdn4.vectorstock.com/i/1000x1000/80/88/person-gray-photo-placeholder-man-vector-22808088.jpg" alt="">
             </vs-avatar>
             </b-col>
 
-            <b-col cols="11">
+            <b-col cols="10" md="11">
                  <b-form-textarea
                 id="textarea"
                 class="no-outline ml-2"
@@ -43,27 +43,27 @@
 
     </b-list-group-item>
     <b-list-group-item v-for="(value, key) in listData" :key="key">
-        <vs-row>
-            <vs-col w="1">
+        <b-row>
+            <b-col cols="2" md="1">
                 <vs-avatar>
                     <img :src="value.profile" alt="">
                 </vs-avatar>
-            </vs-col>
+            </b-col>
 
-            <vs-col w="11">
+            <b-col cols="10" md="11">
                 <div class="ml-2">
                     <b>{{ value.nama }}</b>
                     {{ value.username }}. {{ value.waktu }} <br>
                     {{ value.tweet }}
                 </div>
 
-            </vs-col>
+            </b-col>
 
-            <vs-col offset="1" w="11" class="mt-2">
+            <b-col cols="12" class="mt-2">
                 <img :src="value.gambar" fluid alt="">
-            </vs-col>
+            </b-col>
 
-        </vs-row>
+        </b-row>
     </b-list-group-item>
 </b-list-group>
 </template>
