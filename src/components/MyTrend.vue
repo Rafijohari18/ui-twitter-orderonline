@@ -24,7 +24,7 @@
                     <b-list-group-item v-for="(value, key) in tweetData" :key="key">
                         <vs-row>
                             <vs-col w="11">
-                                <small>{{ value.judul }} </small>
+                                <small>{{ value.judul }} </small> <br>
                                 <b>{{ value.tweet }} </b> <br>
                                 <small>{{ value.jumlah }}  </small>
                             </vs-col>

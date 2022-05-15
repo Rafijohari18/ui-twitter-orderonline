@@ -1,17 +1,16 @@
 <template>
 
 <div class="hidden">
+    
+    <template>
+      <vs-button @click="activeSidebar = !activeSidebar" flat icon>
+                <b-icon icon="menu-button-wide"></b-icon>
+      </vs-button>
+    </template>
 
     <vs-sidebar
         v-model="active"
         :open.sync="activeSidebar">
-
-        <template #left>
-          <vs-button @click="activeSidebar = !activeSidebar" flat icon>
-                   <b-icon icon="menu-button-wide"></b-icon>
-          </vs-button>
-        </template>
-
 
       <vs-row class="mt-3 mb-2">
         <vs-col offset="1" w="9">
